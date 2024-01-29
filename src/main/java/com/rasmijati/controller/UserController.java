@@ -31,6 +31,7 @@ public class UserController {
             System.out.println("2 for display :");
             System.out.println("3 for delete :");
             System.out.println("4 for edit : ");
+            System.out.println("5 for exit : ");
             System.out.println();
             System.out.println("Enter your choice : ");
             choice = sc.next();
@@ -39,13 +40,13 @@ public class UserController {
                     Create();
                     break;
                 case "2":
-
+                    ShowAll();
                     break;
                 case "3":
-
+                    Delete();
                     break;
                 case "4":
-
+                    Edit();
                     break;
                 case "5":
                     return;
