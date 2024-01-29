@@ -11,9 +11,9 @@ package com.rasmijati.model;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Task {
+public class Task implements IEntity{
 
-    private Long taskId;
+    private Long id;
 
     private String taskName;
 
@@ -38,12 +38,14 @@ public class Task {
         this.status = TaskStatus.OPEN; // Default status when a task is created
     }
 
-    public Long getTaskId() {
-        return taskId;
+    @Override
+    public Long getId() {
+        return id;
     }
 
-    public void setTaskId(Long taskId) {
-        this.taskId = taskId;
+    @Override
+    public void setId(Long Id) {
+        this.id = Id;
     }
 
     public String getTaskName() {
@@ -97,7 +99,7 @@ public class Task {
     @Override
     public final int hashCode() {
         int hash = 5;
-        hash = 67 * hash + Objects.hashCode(this.taskId);
+        hash = 67 * hash + Objects.hashCode(this.id);
         hash = 67 * hash + Objects.hashCode(this.taskName);
         hash = 67 * hash + Objects.hashCode(this.description);
         hash = 67 * hash + Objects.hashCode(this.dueDate);
@@ -123,7 +125,7 @@ public class Task {
         if (!Objects.equals(this.description, other.description)) {
             return false;
         }
-        if (!Objects.equals(this.taskId, other.taskId)) {
+        if (!Objects.equals(this.id, other.id)) {
             return false;
         }
         if (!Objects.equals(this.dueDate, other.dueDate)) {
@@ -140,7 +142,7 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{" + "taskId=" + taskId + ", taskName=" + taskName + ", description=" + description + ", dueDate=" + dueDate + ", priority=" + priority + ", status=" + status + ", assignedUser=" + assignedUser + '}';
+        return "Task{" + "taskId=" + id + ", taskName=" + taskName + ", description=" + description + ", dueDate=" + dueDate + ", priority=" + priority + ", status=" + status + ", assignedUser=" + assignedUser + '}';
     }
 
 }
