@@ -21,11 +21,11 @@ public class MainController {
         do {
             System.out.println();
             System.out.println("Select Any Operation : ");
-            System.out.println("1 for create :");
-            System.out.println("2 for display :");
-            System.out.println("3 for delete :");
-            System.out.println("4 for edit : ");
-            System.out.println("5 for exit : ");
+            System.out.println("1 for user :");
+            System.out.println("2 for  :");
+            System.out.println("3 for  :");
+            System.out.println("4 for  : ");
+            System.out.println("5 for  : ");
             System.out.println();
             System.out.println();
             System.out.println("Enter your choice : ");

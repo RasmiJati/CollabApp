@@ -121,14 +121,14 @@ public class UserController {
         String password = null;
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("---------Performing Create Operation-----------");
+        System.out.println("---------Performing Edit Operation-----------");
 
         while (id == null) {
             System.out.println("Enter id :");
             id = sc.nextLong();
             User u = userRepository.ShowById(id);
             while (u == null) {
-                System.out.println("Delete Failed!!!");
+                System.out.println("Edit Failed!!!");
                 System.out.println("Id " + id + " not found!");
                 System.out.println("Please enter valid id !!");
                 return;
