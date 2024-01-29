@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author rasmi
  */
-public class User {
+public class User implements IEntity{
     
     private Long id;
     private String username;
