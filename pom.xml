@@ -9,6 +9,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <exec.mainClass>com.rasmijati.collabapp.CollabApp</exec.mainClass>
+        <exec.mainClass>com.rasmijati.controller.MainController</exec.mainClass>
     </properties>
 </project>
